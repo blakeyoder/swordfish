@@ -1,8 +1,13 @@
 .hero{
   position: absolute;
   width: 100%;
-  height: auto;
-}
-.img-responsive {
+  height: 100%;
+  background-image: image-url("Hero.jpg");
   background-size: cover;
+  @include bp-medium{
+    background-position: 84% 100%;
+  }
+  @include bp-small{
+    background-position: 84% 100%;
+  }
 }
