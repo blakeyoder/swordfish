@@ -5,9 +5,6 @@
   height: 100%;
   background-image: image-url("Hero.jpg");
   background-size: cover;
-  @include bp-medium{
-    background-position: 84% 100%;
-  }
   @include bp-small{
     background-position: 84% 100%;
   }
@@ -23,21 +20,32 @@
   position: absolute;
   top: 100%;
 }
-.col-sm-6 {
+.col-sm-12 {
   width: 50%;
   height: 100%;
   @include bp-medium{
     width: 100%;
   }
-  p {
+  .intro-paragraph {
     text-align: left;
     padding: 15%;
     margin-top: 5%;
-    line-height: 35px;
+    line-height: 25px;
+  }
+  @include bp-medium {
+    padding: 10%;
+  }
+  @include bp-small{
+    padding: 0;
   }
 }
 
 .barsketch {
+  margin: 0 auto;
   margin-top: 22%;
+  @include bp-small{
+    margin-top: -5%;
+    padding: 10%;
+  }
 }
 
