@@ -1,3 +1,6 @@
+$main-font: 'Didot';
+$main-font-bold: 'Didot-Bold';
+
 .hero{
   display: block;
   position: absolute;
@@ -13,7 +16,8 @@
 .scroller{
   position: relative;
   margin-left: 50%;
-  top: 90%;
+  top: 88%;
+  width: 15px;
 }
 
 .container-fluid{
@@ -41,6 +45,31 @@
   }
 }
 
+.col-md-4{
+  padding: 10%;
+  font-family: $main-font-bold;
+  font-size: 16px;
+}
+
+.left:before{
+  display: block;
+  text-align: center;
+  padding-bottom: 5%;
+  content: image-url("alcohol16.png");
+}
+.middle:before{
+  display: block;
+  text-align: center;
+  padding-bottom: 5%;
+  content: image-url("bar21.png");
+}
+.right:before{
+  display: block;
+  text-align: center;
+  padding-bottom: 5%;
+  content: image-url("alcohol40.png");
+}
+
 .barsketch {
   margin: 0 auto;
   margin-top: 22%;
@@ -56,7 +85,7 @@
   min-height: 500px;
   max-width: 100%;
   h2 {
-    font-family: 'Didot-Bold';
+    font-family: $main-font;
     font-size: 50px;
     text-align: center;
     color: white;

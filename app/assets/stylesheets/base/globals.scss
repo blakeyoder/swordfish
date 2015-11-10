@@ -1,4 +1,4 @@
 body {
-  overflow-y: scroll; /* has to be scroll, not auto */
+  overflow: auto; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
 }
