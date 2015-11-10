@@ -56,12 +56,16 @@
   min-height: 500px;
   max-width: 100%;
   h2 {
+    font-family: 'Didot-Bold';
+    font-size: 50px;
     text-align: center;
     color: white;
+    position: relative;
+    top: 150px
   }
   .content-show:after{
       display: block;
-      content: image-url("seperator-1.png");
+      //content: image-url("seperator-1.png");
   }
 }
 .content-clear {
