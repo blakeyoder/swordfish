@@ -46,9 +46,12 @@ $main-font-bold: 'Didot-Bold';
 }
 
 .col-md-4{
-  padding: 10%;
+  padding: 8%;
   font-family: $main-font-bold;
   font-size: 16px;
+  p {
+    margin: 5px;
+  }
 }
 
 .left:before{
