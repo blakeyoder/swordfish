@@ -23,20 +23,21 @@
 .col-sm-12 {
   width: 50%;
   height: 100%;
-  @include bp-medium{
-    width: 100%;
-  }
-  .intro-paragraph {
-    text-align: left;
-    padding: 15%;
-    margin-top: 5%;
-    line-height: 25px;
-  }
-  @include bp-medium {
-    padding: 10%;
-  }
-  @include bp-small{
-    padding: 0;
+    @include bp-medium{
+      width: 100%;
+    }
+    .intro-paragraph {
+      text-align: left;
+      line-height: 25px;
+    @include bp-medium {
+      padding: 10%;
+    }
+    @include bp-small{
+      padding: 0;
+      font-size: 16px;
+      padding: 10%;
+      line-height: 30px;
+    }
   }
 }
 
