@@ -50,3 +50,20 @@
   }
 }
 
+.cocktail-middle {
+  background-image: image-url("cocktail-1.jpg");
+  background-position: 35% 100%;
+  min-height: 500px;
+  max-width: 100%;
+  h2 {
+    text-align: center;
+    color: white;
+  }
+  .content-show:after{
+      display: block;
+      content: image-url("seperator-1.png");
+  }
+}
+.content-clear {
+}
+
