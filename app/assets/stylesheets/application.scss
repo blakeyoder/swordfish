@@ -17,14 +17,8 @@
 
   @font-face {
     font-family: 'Didot';
-    src: asset-url('Didot.dfont');
+    src: font-url("Didot.dfont");
     font-weight: normal;
     font-style: normal;
   }
 
-  @font-face {
-    font-family: 'Didot-Bold';
-    src: asset-url('Didot_bold.dfont');
-    font-weight: bold;
-    font-style: normal;
-  }

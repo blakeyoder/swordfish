@@ -1,16 +1,8 @@
-$main-font: 'Didot';
-$main-font-bold: 'Didot-Bold';
-
 .hero{
-  display: block;
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: image-url("Hero.jpg");
-  background-size: cover;
-  @include bp-small{
-    background-position: 84% 100%;
-  }
+  background: image-url("Hero.jpg") no-repeat center center scroll;
 }
 
 .scroller{
@@ -20,86 +12,94 @@ $main-font-bold: 'Didot-Bold';
   width: 15px;
 }
 
+//overriding bootstrap styles. Might beed to change this
 .container-fluid{
   position: absolute;
   top: 100%;
-}
-.col-sm-12 {
-  width: 50%;
-  height: 100%;
-    @include bp-medium{
-      width: 100%;
-    }
-    .intro-paragraph {
-      text-align: left;
-      line-height: 25px;
-    @include bp-medium {
-      padding: 10%;
-    }
-    @include bp-small{
-      padding: 0;
-      font-size: 16px;
-      padding: 10%;
-      line-height: 30px;
-    }
-  }
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
-.col-md-4{
-  padding: 8%;
-  font-family: $main-font-bold;
-  font-size: 16px;
-  p {
-    margin: 5px;
-  }
-}
-
-.left:before{
-  display: block;
-  text-align: center;
-  padding-bottom: 5%;
-  content: image-url("alcohol16.png");
-}
-.middle:before{
-  display: block;
-  text-align: center;
-  padding-bottom: 5%;
-  content: image-url("bar21.png");
-}
-.right:before{
-  display: block;
-  text-align: center;
-  padding-bottom: 5%;
-  content: image-url("alcohol40.png");
+.sketch-text-row{
+  padding: 7.5%;
 }
 
 .barsketch {
   margin: 0 auto;
-  margin-top: 22%;
-  @include bp-small{
-    margin-top: -5%;
-    padding: 10%;
+  margin-top: 6%;
+}
+
+.intro-paragraph {
+  text-align: left;
+  padding: 12%;
+  line-height: 25px;
+  font-size: $main-font-size;
+}
+
+.callout {
+  display: table;
+  width: 100%;
+  height: 600px;
+  background: image-url("cocktail-1.jpg") no-repeat center center scroll;
+}
+
+.cocktail-top-text {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size: $large-font-size;
+  color: white;
+}
+
+.cocktail-top-text {
+  display: table-cell;
+  text-align: center;
+  font-size: $large-font-size;
+  color: white;
+}
+
+.col-md-4{
+  padding: 5%;
+  @include bp-small {
+    padding: 8%;
+  }
+  p {
+    font-size: $main-font-size;
+    line-height: 25px;
   }
 }
 
-.cocktail-middle {
-  background-image: image-url("cocktail-1.jpg");
-  background-position: 35% 100%;
-  min-height: 500px;
-  max-width: 100%;
-  h2 {
-    font-family: $main-font;
-    font-size: 50px;
-    text-align: center;
-    color: white;
-    position: relative;
-    top: 150px
-  }
-  .content-show:after{
-      display: block;
-      //content: image-url("seperator-1.png");
-  }
+.services-overview{
+  position:absolute;
 }
-.content-clear {
+
+.right p {
+  padding-top: 10px;
 }
+
+.middle p {
+  padding-top: 6px;
+}
+
+.left:before{
+  content: image-url("alcohol16.png");
+  display: block;
+  padding-bottom: 10%;
+  text-align:center;
+}
+
+.middle:before{
+  content: image-url("bar21.png");
+  display: block;
+  padding-bottom: 10%;
+  text-align:center;
+}
+
+.right:before{
+  content: image-url("alcohol40.png");
+  display: block;
+  padding-bottom: 10%;
+  text-align:center;
+}
+
 
