@@ -21,8 +21,10 @@
   padding-left: 0px;
 }
 
+//temp fix so that the sides dont blow out
 .sketch-text-row{
-  padding: 6%;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .barsketch {
