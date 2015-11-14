@@ -30,7 +30,7 @@
         <div class="row">
           <div class="col-md-4 col-sm-3 no-padding">
             <h1 class="work-text">Let our work speak for itself</h1>
-            <p>Donec orci odio, pulvinar ac pellentesque nec, ultricies eu dolor. Aliquam varius auctor facilisis. Mauris elementum dolor ac elit fermentum scelerisque. Maecenas sed molestie enim. Duis eget cursus ex. Duis semper, dui vel tempus facilisis, eros sapien ullamcorper magna, eu mattis ante massa vitae elit. Eu mattis ante massa vitae elit. Donec orci odio, pulvinar ac pellentesque nec, ultricies eu dolor. Aliquam varius auctor facilisis.</p>
+            <p class="box-text">Donec orci odio, pulvinar ac pellentesque nec, ultricies eu dolor. Aliquam varius auctor facilisis. Mauris elementum dolor ac elit fermentum scelerisque. Maecenas sed molestie enim. Duis eget cursus ex. Duis semper, dui vel tempus facilisis, eros sapien ullamcorper magna, eu mattis ante massa vitae elit. Eu mattis ante massa vitae elit. Donec orci odio, pulvinar ac pellentesque nec, ultricies eu dolor. Aliquam varius auctor facilisis.</p>
           </div>
           <div class="push-right">
             <%= image_tag("cocktail-2.jpg", :class => "img-responsive old-fashioned-image") %>
@@ -39,7 +39,7 @@
         <div class="row">
           <div class="col-md-4 col-sm-3 pull-right">
             <h1 class="work-text">Another Title goes here</h1>
-            <p>Donec orci odio, pulvinar ac pellentesque nec, ultricies eu dolor. Aliquam varius auctor facilisis. Mauris elementum dolor ac elit fermentum scelerisque. Maecenas sed molestie enim. Duis eget cursus ex. Duis semper, dui vel tempus facilisis, eros sapien ullamcorper magna, eu mattis ante massa vitae elit. Duis eget cursus ex. Duis semper, dui vel tempus facilisis, eros sapien ullamcorper magna, eu mattis ante massa vitae elit.</p>
+            <p class="box-text">Donec orci odio, pulvinar ac pellentesque nec, ultricies eu dolor. Aliquam varius auctor facilisis. Mauris elementum dolor ac elit fermentum scelerisque. Maecenas sed molestie enim. Duis eget cursus ex. Duis semper, dui vel tempus facilisis, eros sapien ullamcorper magna, eu mattis ante massa vitae elit. Duis eget cursus ex. Duis semper, dui vel tempus facilisis, eros sapien ullamcorper magna, eu mattis ante massa vitae elit.</p>
           </div>
           <div class="pull-left">
               <%= image_tag("sample-menu.jpg", :class => "img-responsive menu-image") %>
@@ -49,13 +49,18 @@
 
   <section class="form-call-to-action">
     <div class="strainer-image">
-        <h2 class="form-call-out-text">Book your event today</br><span class="break-text">Fill out our questionnaire and we will get in touch with you</span></h2>
+      <div class="form-call-out-text">
+        <h2 id="booking-text">Book your event today</br><span class="break-text">Fill out our questionnaire and we will get in touch with you</span></h2>
+        <button class="form-button">GET STARTED</button>
+      </div>
     </div>
   </section>
 
   <section class="footer">
     <h2 class="company-text">SWORDFISH COCKTAILS</h2>
     <p class="event-text">EVENTS</br>PRIVATE PARTIES</p>
+    <%= image_tag("fa-instagram.png", :class => "instagram") %>
+    <p class="email">info@swordfishcocktails.com</p>
   </section>
 </div> <!-- container-fluid -->
 

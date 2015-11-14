@@ -133,10 +133,13 @@
 
 .form-call-out-text{
   display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#booking-text {
   text-align: center;
   vertical-align: middle;
-  padding-left: 5px;
-  padding-right: 5px;
   font-size: $large-font-size;
   font-family: $main-font;
   color: white;
@@ -145,33 +148,64 @@
   font-size: 25px;
 }
 
+
+.form-button {
+  display: block;
+  margin: 0 auto;
+  height: 10%;
+  width: 275px;
+  border: 1px solid white;
+  border-radius: 1px;
+  background-color: transparent;
+  color: white;
+  font-family: $main-font;
+  font-size: 30px;
+  padding-top: 4px;
+  transition: .5s;
+  &:hover {
+    background-color: white;
+    color: black;
+    transition: .5s;
+  }
+}
+
+//all footer text sections
 .footer {
   height: 450px;
   width: 100%;
   background-color: #191919;
-}
-
-.company-text {
-  text-align: center;
-  font-family: $main-font;
-  color: white;
-  margin-top: 0px;
-  font-size: 40px;
-  padding: 75px 10px 0px 10px;
-  @include bp-small {
-    font-size: 25px;
+  .event-text {
+    padding-top: 20px;
+    font-family: $main-font;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+      @include bp-small {
+        font-size: 20px;
+      }
+  }
+  .company-text {
+    text-align: center;
+    font-family: $main-font;
+    color: white;
+    margin-top: 0px;
+    font-size: 40px;
+    padding: 75px 10px 0px 10px;
+      @include bp-small {
+        font-size: 25px;
+      }
+  }
+  .email {
+    padding-top: 20px;
+    font-family: $main-font;
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+  }
+  .instagram {
+    display: block;
+    margin: 0 auto;
   }
 }
-
-.event-text {
-  padding-top: 20px;
-  font-family: $main-font;
-  font-style: italic;
-  font-size: 30px;
-  text-align: center;
-  color: white;
-  @include bp-small {
-    font-size: 20px;
-  }
-}
-
