@@ -19,9 +19,9 @@
   padding-left: 0px
 }
 //temp fix so that the sides dont blow out
-.sketch-text-row {
+#sketch-text-row {
   margin-left: 0px;
-  margin-right: 0px
+  margin-right: 0px;
 }
 .row {
   margin-right: 0px;
@@ -57,6 +57,17 @@
   color: white;
 }
 
+.break-text{
+  font-size: 25px;
+}
+
+.separator {
+  display: block;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .col-md-4 {
   padding: 5%;
   @include bp-small {
@@ -90,6 +101,9 @@
   text-align: center;
 }
 .right:before {
+  display: block;
+  vertical-align: middle;
+  position: relative;
   content: image-url("alcohol40.png");
   display: block;
   padding-bottom: 10%;
@@ -105,6 +119,7 @@
 
 .no-padding {
   padding-right: 15px;
+  margin-bottom: -15px;
 }
 
 .pull-right {
@@ -144,10 +159,6 @@
   font-family: $main-font;
   color: white;
 }
-.break-text{
-  font-size: 25px;
-}
-
 
 .form-button {
   display: block;
@@ -166,6 +177,10 @@
     background-color: white;
     color: black;
     transition: .5s;
+  }
+  @include bp-small {
+    font-size: 20px;
+    width: 200px;
   }
 }
 
@@ -207,5 +222,10 @@
   .instagram {
     display: block;
     margin: 0 auto;
+    transition: .5s;
+    &:hover {
+      opacity: .7;
+      transition: .5s;
+    }
   }
 }

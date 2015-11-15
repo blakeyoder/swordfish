@@ -3,7 +3,7 @@
 </div>
 
 <div class="container-fluid">
-  <div class="row sketch-text-row">
+  <div class="row" id="sketch-text-row">
     <div class="col-md-6">
         <p class="intro-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed ligula vel enim condimentum laoreet. Nunc ante nunc, maximus vel efficitur ut, volutpat vitae ex. Nullam suscipit ligula in diam pulvinar ultrices. In varius sollicitudin dolor nec congue. Quisque imperdiet id lorem et molestie. Fusce aliquam tempus massa in ullamcorper. Donec orci odio, pulvinar ac pellentesque nec, ultricies eu dolor. Aliquam varius auctor facilisis.</p>
     </div>
@@ -13,7 +13,9 @@
   </div>
 
     <aside class="callout">
-      <h2 class="cocktail-top-text">Custom catered menus</br>for your event</h2>
+      <h2 class="cocktail-top-text">Custom catered menus</br>
+        <%= image_tag("seperator-1.png", :class => "img-responsive separator") %>
+      for your event</h2>
     </aside>
 
     <section class="services-overview">
@@ -59,7 +61,7 @@
   <section class="footer">
     <h2 class="company-text">SWORDFISH COCKTAILS</h2>
     <p class="event-text">EVENTS</br>PRIVATE PARTIES</p>
-    <%= image_tag("fa-instagram.png", :class => "instagram") %>
+    <a href="http://www.instagram.com/swordfishcocktails"><%= image_tag("fa-instagram.png", :class => "instagram") %></a>
     <p class="email">info@swordfishcocktails.com</p>
   </section>
 </div> <!-- container-fluid -->
