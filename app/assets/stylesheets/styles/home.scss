@@ -210,11 +210,13 @@
   }
 }
 
+//form stylings
+
 #form{
   display: none;
   background-color: black;
   width: 100%;
-  height: 900px;
+  height: 2000px;
   padding-top: 50px;
   h1 {
     text-align: center;
@@ -223,4 +225,139 @@
     color: white;
     font-style: italic;
   }
+  h2 {
+    text-align: center;
+    font-family: $main-font;
+    font-size: 20px;
+    color: white;
+    font-style: bold;
+  }
+}
+
+#request_name {
+  border-radius: 0px;
+  border-color: white;
+  background-color: transparent;
+  font-family: $main-font;
+  color: white;
+  height: 60px;
+  font-size: 20px;
+}
+
+#request_email {
+  border-radius: 0px;
+  border-color: white;
+  background-color: transparent;
+  font-family: $main-font;
+  color: white;
+  height: 60px;
+  font-size: 20px;
+}
+
+#request_phone_number {
+  border-radius: 0px;
+  border-color: white;
+  background-color: transparent;
+  font-family: $main-font;
+  color: white;
+  height: 60px;
+  font-size: 20px;
+}
+
+#request_city {
+  border-radius: 0px;
+  border-color: white;
+  background-color: transparent;
+  font-family: $main-font;
+  color: white;
+  height: 60px;
+  font-size: 20px;
+}
+
+#request_event_date {
+  border-radius: 0px;
+  border-color: white;
+  background-color: transparent;
+  font-family: $main-font;
+  color: white;
+  height: 60px;
+  font-size: 20px;
+}
+
+#request_no_of_guests {
+  border-radius: 0px;
+  border-color: white;
+  background-color: transparent;
+  font-family: $main-font;
+  color: white;
+  height: 60px;
+  font-size: 20px;
+  text-align: center;
+  transition: .5s;
+  &:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: .5s;
+  }
+}
+
+#request_no_of_drinks {
+  border-radius: 0px;
+  border-color: white;
+  background-color: transparent;
+  font-family: $main-font;
+  color: white;
+  height: 60px;
+  font-size: 20px;
+  text-align: center;
+  transition: .5s;
+  &:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: .5s;
+  }
+}
+
+#request_over_21 {
+  height: 50px;
+  width: 100%;
+  border-radius: 0px;
+  border-color: white;
+  &:before {
+    content: '';
+    color: white;
+    font-family: $main-font;
+    font-size: 16px;
+  }
+}
+
+#request_terms_and_agreement {
+  height: 50px;
+  width: 100%;
+  border-radius: 0px;
+  border-color: white;
+  &:before {
+    content: '';
+    color: white;
+    font-family: $main-font;
+    font-size: 16px;
+  }
+}
+
+hr {
+  width: 60%;
+}
+
+#form-info-text {
+  padding-top: 15px;
+}
+
+.form-padding {
+  padding: 3% 5% 0% 5%;
+}
+
+.form-submit{
+
 }
