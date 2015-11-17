@@ -10,6 +10,8 @@ default: &default
 development:
   <<: *default
 
-
 production:
-  <<: *default
+  adapter: postgresql
+  database: swordfish_production
+  pool: 5
+  timeout: 5000
