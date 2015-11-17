@@ -9,10 +9,10 @@
   </div>
   <div class="row">
     <div class="col-md-4 col-md-offset-2 form-padding">
-      <%= f.input :name, label: false, placeholder: "PHONE NUMBER" %>
+      <%= f.input :phone_number, label: false, placeholder: "PHONE NUMBER" %>
     </div>
     <div class="col-md-4 form-padding">
-      <%= f.input :email, label: false, placeholder: "CITY, STATE" %>
+      <%= f.input :city_state, label: false, placeholder: "CITY, STATE" %>
     </div>
   </div>
   <hr>
@@ -26,23 +26,23 @@
   <h2 id="form-info-text">How many estimated guests are attending?</h2>
   <div class="row">
     <div class="col-md-4 col-md-offset-2 form-padding">
-      <%= f.input :no_of_guests, as: :string, label: false, placeholder: "10", input_html: { value: '10' }, readonly: true %>
+      <%= f.input :no_of_guests, as: :string, :onclick => 'changeValue(10)',  label: false, placeholder: "10", input_html: { value: '' }, readonly: true  %>
     </div>
     <div class="col-md-4 form-padding">
-      <%= f.input :no_of_guests, as: :string, label: false, placeholder: "20", input_html: { value: '20' }, readonly: true %>
+      <%= f.input :no_of_guests, as: :string, label: false, placeholder: "20", input_html: { value: '' }, readonly: true %>
     </div>
   </div>
   <div class="row">
     <div class="col-md-4 col-md-offset-2 form-padding">
-      <%= f.input :no_of_guests, as: :string, label: false, placeholder: "30", input_html: { value: '30' }, readonly: true %>
+      <%= f.input :no_of_guests, as: :string, label: false, placeholder: "30", input_html: { value: '' }, readonly: true %>
     </div>
     <div class="col-md-4 form-padding">
-      <%= f.input :no_of_guests, as: :string, label: false, placeholder: "40", input_html: { value: '40' }, readonly: true %>
+      <%= f.input :no_of_guests, as: :string, label: false, placeholder: "40", input_html: { value: '' }, readonly: true %>
     </div>
   </div>
   <div class="row">
     <div class="col-md-4 col-md-offset-4 form-padding">
-      <%= f.input :no_of_guests, as: :string, label: false, placeholder: "50", input_html: { value: '50+' }, readonly: true %>
+      <%= f.input :no_of_guests, as: :string, label: false, placeholder: "50", input_html: { value: '' }, readonly: true %>
     </div>
   </div>
   <hr>
@@ -74,9 +74,5 @@
       <%= f.input :terms_and_agreement, as: :boolean, label: false %>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-3 col-md-offset-5 form-padding">
-      <%= f.submit 'SUBMIT', :class => 'form-submit' %>
-    </div>
-  </div>
+  <%= f.button :submit, 'SUBMIT', :class => 'form-submit' %>
 <% end %>
