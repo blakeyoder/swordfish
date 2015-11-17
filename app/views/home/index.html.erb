@@ -58,6 +58,12 @@
     </div>
   </section>
 
+  <section id="form">
+    <h1>Swordfish Questionnaire</h1>
+    <h2 id="form-info-text">Let us get a little information from you first</h2>
+    <%= render partial: "partials/request_form", locals: {request: new_request_form}  %>
+  </section>
+
   <section class="footer">
     <h2 class="company-text">SWORDFISH COCKTAILS</h2>
     <p class="event-text">EVENTS</br>PRIVATE PARTIES</p>
@@ -65,4 +71,3 @@
     <p class="email">info@swordfishcocktails.com</p>
   </section>
 </div> <!-- container-fluid -->
-
