@@ -12,7 +12,7 @@ class RequestsController < ApplicationController
       end
     end
 
-    private def request_params
+    def request_params
       params.require(:request).permit(:name, :email, :phone_number, :city_state, :event_date, :no_of_guests, :no_of_drinks, :over_21, :terms_and_agreement)
     end
 end
