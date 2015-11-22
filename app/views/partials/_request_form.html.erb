@@ -25,42 +25,15 @@
   <hr>
   <h2 id="form-info-text">How many estimated guests are attending?</h2>
   <div class="row">
-    <div class="col-md-4 col-md-offset-2 form-padding">
-      <%= f.input :no_of_guests, as: :string, :onclick => 'changeValue(10)',  label: false, placeholder: "10", input_html: { value: '' }, readonly: true  %>
-    </div>
-    <div class="col-md-4 form-padding">
-      <%= f.input :no_of_guests, as: :string, label: false, placeholder: "20", input_html: { value: '' }, readonly: true %>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4 col-md-offset-2 form-padding">
-      <%= f.input :no_of_guests, as: :string, label: false, placeholder: "30", input_html: { value: '' }, readonly: true %>
-    </div>
-    <div class="col-md-4 form-padding">
-      <%= f.input :no_of_guests, as: :string, label: false, placeholder: "40", input_html: { value: '' }, readonly: true %>
-    </div>
-  </div>
-  <div class="row">
     <div class="col-md-4 col-md-offset-4 form-padding">
-      <%= f.input :no_of_guests, as: :string, label: false, placeholder: "50", input_html: { value: '' }, readonly: true %>
+      <%= f.input :no_of_guests, :collection => ['10', '20', '30', '40', '50+'], label: false  %>
     </div>
   </div>
   <hr>
   <h2 id="form-info-text">How many drinks would you like on your custom menu?</h2>
   <div class="row">
-    <div class="col-md-4 col-md-offset-2 form-padding">
-      <%= f.input :no_of_drinks, as: :string, label: false, input_html: { value: '3' }, readonly: true %>
-    </div>
-    <div class="col-md-4 form-padding">
-      <%= f.input :no_of_drinks, as: :string, label: false, input_html: { value: '5' }, readonly: true %>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4 col-md-offset-2 form-padding">
-      <%= f.input :no_of_drinks, as: :string, label: false, input_html: { value: '7' }, readonly: true %>
-    </div>
-    <div class="col-md-4 form-padding">
-      <%= f.input :no_of_drinks, as: :string, label: false, input_html: { value: '10+' }, readonly: true %>
+    <div class="col-md-4 col-md-offset-4 form-padding">
+      <%= f.input :no_of_drinks, :collection => ['3', '5', '7', '10+'], label: false  %>
     </div>
   </div>
   <hr>
@@ -74,5 +47,5 @@
       <%= f.input :terms_and_agreement, as: :boolean, label: false %>
     </div>
   </div>
-  <%= f.button :submit, 'SUBMIT', :class => 'form-submit' %>
+  <%= f.button :submit, 'SUBMIT', :class => 'form-submit', data: { confirm: 'Your confirm message' } %>
 <% end %>
