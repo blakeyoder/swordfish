@@ -304,25 +304,31 @@
   font-size: 20px;
 }
 
-#request_no_of_guests {
+.collection_radio_buttons {
+  display: block;
+  margin: 0 auto;
   border-radius: 0px;
-  border-color: white;
+  border: 1px solid white;
   background-color: transparent;
   font-family: $main-font;
   color: white;
   height: 60px;
+  width: 450px;
+  padding: 4%;
   font-size: 20px;
   text-align: center;
-  transition: .5s;
+  vertical-align: middle;
+  transition: 0.5s;
   &:hover {
+    cursor: pointer;
     background-color: white;
     color: black;
-    cursor: pointer;
-    transition: .5s;
+    transition: 0.5s;
   }
-  option {
-    text-align: center;
-  }
+}
+
+input[type="radio"], input[type="checkbox"] {
+  display: none;
 }
 
 
@@ -412,4 +418,11 @@ hr {
     cursor: pointer;
     transition: .5s;
   }
+}
+
+//clicked class
+.clicked {
+    background-color: white;
+    color: black;
+    z-index: 3;
 }
