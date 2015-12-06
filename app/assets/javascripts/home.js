@@ -7,10 +7,6 @@ $(document).ready(function(){
       $('.guests').removeClass('clicked');
       $(this).addClass('clicked');
   });
-  // $(".form-button").click(function(){
-  //   $('#form').animate({
-  //     "margin-top": '-600px',
-  //   });
-  //   $("#form").show();
-  // });
+  $("#request_phone_number").mask('(000) 000-0000');
+  $("#request_event_date").mask('00/00');
 });

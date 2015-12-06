@@ -43,12 +43,12 @@
 }
 .intro-paragraph {
   text-align: left;
-  padding: 20% 0% 15% 20%;
+  padding: 20% 0% 2% 20%;
   line-height: 30px;
   font-size: 20px;
   font-family: $main-font;
   @include bp-large{
-    padding: 10%;
+    padding: 12%;
   }
 }
 .callout {
@@ -92,33 +92,36 @@
 .services-overview {
   position: relative;
 }
-.right p {
-  padding-top: 10px;
+
+.thumbnail {
+  background-color: transparent;
+  border: none;
 }
-.middle p {
-  padding-top: 6px;
+
+.bottle-image {
+  width: 75px;
+  height: auto;
+  @include bp-small {
+    width: 40%;
+  }
 }
-.left:before {
-  content: image-url("alcohol16.png");
-  display: block;
-  padding-bottom: 10%;
-  text-align: center;
+
+.stirrer-image {
+  width: 140px;
+  height: auto;
+  @include bp-small {
+    width: 95%;
+  }
 }
-.middle:before {
-  content: image-url("bar21.png");
-  display: block;
-  padding-bottom: 10%;
-  text-align: center;
+
+.glass-image {
+  width: 140px;
+  height: auto;
+  @include bp-small {
+    width: 100%;
+  }
 }
-.right:before {
-  display: block;
-  vertical-align: middle;
-  position: relative;
-  content: image-url("alcohol40.png");
-  display: block;
-  padding-bottom: 10%;
-  text-align: center;
-}
+
 .work-info {
   position: relative;
 }
@@ -132,8 +135,13 @@
   margin-bottom: -15px;
 }
 
-.pull-right {
-  padding-left: 15px;
+.push-right{
+  background-image: image-url("cocktail-2.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  position:relative;
+  min-width: 100%;
+  height: 400px;
 }
 
 .menu-image{
@@ -141,10 +149,18 @@
 }
 
 .work-text {
+  padding-top: 15px;
   text-align: center;
   font-style: bold;
   font-family: $main-font;
   font-size: $large-font-size;
+}
+
+.work-paragraph{
+  padding: 15px 0px 0px 15px;
+  text-align: left;
+  font-family: $main-font;
+  font-size: $main-font-size;
 }
 
 .strainer-image {
@@ -247,6 +263,7 @@
   background-color: black;
   width: 100%;
   height: 2000px;
+  display: none;
   @include bp-medium {
     height: 2075px;
   }
@@ -420,10 +437,6 @@ hr {
     cursor: pointer;
     transition: .5s;
   }
-}
-
-.animation-div{
-  height:100%;
 }
 
 //clicked class
