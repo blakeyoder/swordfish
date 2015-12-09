@@ -68,7 +68,9 @@
 }
 
 .break-text{
-  font-size: 25px;
+  font-size: 20px;
+  text-align:center;
+  line-height: 15px;
 }
 
 .separator {
@@ -79,16 +81,13 @@
 }
 
 .col-md-4 {
-  padding: 5%;
-  @include bp-small {
-    padding: 8%
-  }
   p {
     font-size: $main-font-size;
     font-family: $main-font;
     line-height: 25px;
   }
 }
+
 .services-overview {
   position: relative;
 }
@@ -96,38 +95,43 @@
 .thumbnail {
   background-color: transparent;
   border: none;
-}
-
-.bottle-image {
-  width: 75px;
-  height: auto;
-  @include bp-small {
-    width: 40%;
+  height: 400px;
+  padding-top: 50px;
+  img {
+    vertical-align: bottom;
+    bottom: 40px;
   }
 }
 
-.stirrer-image {
-  width: 140px;
-  height: auto;
-  @include bp-small {
-    width: 95%;
-  }
+.caption {
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
-.glass-image {
-  width: 140px;
-  height: auto;
-  @include bp-small {
-    width: 100%;
+.limit {
+  @media (max-width:1200px) and (min-width:725px) {
+    width: 60%;
+    height: 60%;
+  }
+  float: right;
+  height: 100%;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.old-fashioned-image {
+  float: right;
+}
+
+.menu-image {
+  @media (max-width:1200px) and (min-width:725px) {
+    width: 60%;
+    height: 60%;
   }
 }
 
 .work-info {
   position: relative;
-}
-
-.old-fashioned-image {
-  float: right;
 }
 
 .no-padding {
@@ -153,12 +157,17 @@
   text-align: center;
   font-style: bold;
   font-family: $main-font;
-  font-size: $large-font-size;
+  font-size: 35px;
 }
 
-.work-paragraph{
-  padding: 15px 0px 0px 15px;
-  text-align: left;
+.work-paragraph-left{
+  text-align: center;
+  font-family: $main-font;
+  font-size: $main-font-size;
+}
+
+.work-paragraph-right{
+  text-align: center;
   font-family: $main-font;
   font-size: $main-font-size;
 }
@@ -258,14 +267,16 @@
 }
 
 //form stylings
+center {
+  margin: 0 auto;
+}
 
 #form{
   background-color: black;
   width: 100%;
   height: 2000px;
-  display: none;
   @include bp-medium {
-    height: 2075px;
+    height: 1750px;
   }
   padding-top: 50px;
   h1 {
@@ -282,6 +293,14 @@
     color: white;
     font-style: bold;
   }
+}
+
+.form-edited {
+  padding: 5px;
+}
+
+.form-width {
+  width: 95%;
 }
 
 #request_name {
@@ -409,7 +428,7 @@ hr {
 }
 
 .form-padding {
-  padding: 2% 5% 0% 5%;
+  padding: 0% 7% 0% 7%;
 }
 
 .checkbox {

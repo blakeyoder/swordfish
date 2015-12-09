@@ -18,6 +18,7 @@
 
 $(document).ready(function(){
   $(".form-button").click(function(){
-    $('#form').slideToggle()
+    //$(".form-call-to-action").hide();
+    //$('#form').show();
   });
 });
