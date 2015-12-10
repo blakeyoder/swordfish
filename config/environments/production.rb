@@ -69,8 +69,8 @@ Rails.application.configure do
     address:              'smtp.sendgrid.net',
     port:                 587,
     domain:               'heroku.com',
-    user_name:            ENV[‘SENDGRID_USERNAME’],
-    password:             ENV[‘SENDGRID_PASSWORD’]
+    user_name:            ENV["SENDGRID_USERNAME"],
+    password:             ENV["SENDGRID_PASSWORD"]
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
