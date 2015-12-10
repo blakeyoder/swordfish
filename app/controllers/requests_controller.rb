@@ -6,8 +6,9 @@ class RequestsController < ApplicationController
     def create
       @request = Request.new(request_params)
       if @request.save
-        RequestFormMailer.response_email(@request).deliver
+        flash[:success] = "Thank you for your submission!"
         redirect_to root_url
+        RequestFormMailer.response_email(@request).deliver
       else
         alert("Your request has not been sumbitted. Please submit again")
       end

@@ -9,4 +9,9 @@ $(document).ready(function(){
   });
   $("#request_phone_number").mask('(000) 000-0000');
   $("#request_event_date").mask('00/00');
+
+  setTimeout(function(){
+    $('.alert').fadeOut();
+  }, 5000);
+
 });
