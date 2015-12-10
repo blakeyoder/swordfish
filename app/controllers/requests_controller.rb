@@ -9,6 +9,7 @@ class RequestsController < ApplicationController
         flash[:success] = "Thank you for your submission!"
         redirect_to root_url
         RequestFormMailer.response_email(@request).deliver
+        RequestFormMailer.admin_response_email(@request).deliver
       else
         alert("Your request has not been sumbitted. Please submit again")
       end
