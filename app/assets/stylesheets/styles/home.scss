@@ -161,12 +161,20 @@
 
 .old-fashioned-image {
   float: right;
+  padding-bottom: 15px;
+  @include bp-small {
+    padding-bottom: 0px;
+  }
 }
 
 .menu-image {
   @media (max-width:1200px) and (min-width:725px) {
     width: 60%;
     height: 60%;
+  }
+  padding-bottom: 15px;
+  @include bp-small {
+    padding-bottom: 0px;
   }
 }
 
@@ -204,12 +212,20 @@
   text-align: center;
   font-family: $main-font;
   font-size: $main-font-size;
+  padding: 20px;
+  @include bp-medium {
+    padding: 0px;
+  }
 }
 
 .work-paragraph-right{
   text-align: center;
   font-family: $main-font;
   font-size: $main-font-size;
+  padding: 20px;
+  @include bp-medium {
+    padding: 0px;
+  }
 }
 
 .strainer-image {
