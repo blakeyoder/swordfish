@@ -135,6 +135,7 @@
 }
 
 .thumbnail {
+  opacity: 0;
   background-color: transparent;
   border: none;
   height: 350px;
@@ -274,6 +275,10 @@
 
 .modal-content {
   -webkit-overflow-scrolling: auto;
+}
+
+#myModal {
+  overflow: scroll;
 }
 
 //all footer text sections

@@ -23,17 +23,14 @@
     font-style: normal;
   }
 
-  html {
-    min-height: 4500px;
-  }
 
   body {
     font-smooth: always;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e7dfd9+0,d8d1cb+100 */
-    background: #e7dfd9; /* Old browsers */
-    background: -moz-linear-gradient(top,  #e7dfd9 0%, #d8d1cb 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e7dfd9), color-stop(100%,#d8d1cb)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #e7dfd9 0%,#d8d1cb 100%); /* Chrome10+,Safari5.1+ */
+    background: #e7dfd9 fixed; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e7dfd9 0%, #d8d1cb 100%) fixed; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e7dfd9), color-stop(100%,#d8d1cb)) fixed; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #e7dfd9 0%,#d8d1cb 100%) fixed; /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(top,  #e7dfd9 0%,#d8d1cb 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top,  #e7dfd9 0%,#d8d1cb 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #e7dfd9 0%,#d8d1cb 100%); /* W3C */
