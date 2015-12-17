@@ -148,16 +148,6 @@
   font-family: $main-font;
 }
 
-.limit {
-  @media (max-width:1200px) and (min-width:725px) {
-    width: 60%;
-    height: 60%;
-  }
-  float: right;
-  height: 100%;
-  max-height: 600px;
-  overflow: hidden;
-}
 
 .old-fashioned-image {
   float: right;
@@ -280,6 +270,10 @@
     font-size: 20px;
     width: 200px;
   }
+}
+
+.modal-content {
+  -webkit-overflow-scrolling: auto;
 }
 
 //all footer text sections
