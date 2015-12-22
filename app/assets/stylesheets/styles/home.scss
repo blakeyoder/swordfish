@@ -15,7 +15,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: image-url("Hero.jpg") no-repeat center center scroll;
+  background: image-url("Hero.jpg") no-repeat 86% center scroll;
   background-size: cover
 }
 .scroller {
@@ -350,9 +350,9 @@ center {
 #form{
   background-color: black;
   width: 100%;
-  height: 2000px;
+  height: 1750px;
   @include bp-medium {
-    height: 1750px;
+    height: 1350px;
   }
   padding-top: 50px;
   h1 {
@@ -464,8 +464,9 @@ input[type="radio"]{
   width: 85%;
   border-radius: 0px;
   border-color: white;
+  margin: 0 auto;
   &:after {
-    content: 'Donec orci odio, pulvinar ac pellentesque nec, ultricies eu dolor.';
+    content: 'I acknowledge that I am at least 21 years of age';
     width: 300px;
     position: absolute;
     padding-right: 5%;
@@ -477,30 +478,30 @@ input[type="radio"]{
 }
 
 
-#request_terms_and_agreement {
-  margin-top: 30px;
-  height: 15px;
-  width: 85%;
-  border-radius: 0px;
-  border-color: white;
-  &:after {
-    content: 'Donec orci odio, pulvinar ac pellentesque nec, ultricies eu dolor. Aliquam varius auctor facilisis. Mauris elementum dolor ac elit fermentum scelerisque. Maecenas sed molestie enim.';
-    width: 300px;
-    position: absolute;
-    left: 30px;
-    padding-right: 5%;
-    color: white;
-    font-family: $main-font;
-    font-size: 16px;
-  }
-}
+// #request_terms_and_agreement {
+//   margin-top: 30px;
+//   height: 15px;
+//   width: 85%;
+//   border-radius: 0px;
+//   border-color: white;
+//   &:after {
+//     content: 'Swordfish Cocktails has no control over, and assumes no responsibility for t.';
+//     width: 300px;
+//     position: absolute;
+//     left: 30px;
+//     padding-right: 5%;
+//     color: white;
+//     font-family: $main-font;
+//     font-size: 16px;
+//   }
+// }
 
 hr {
   width: 60%;
 }
 
 #form-info-text {
-  padding-top: 15px;
+  padding: 5px;
 }
 
 .form-padding {
@@ -509,7 +510,7 @@ hr {
 
 .checkbox {
   float: left;
-  margin-left: 5%;
+  margin: 0 auto;
 }
 
 
@@ -526,7 +527,7 @@ hr {
   width: 300px;
   margin: 0 auto;
   display: block;
-  margin-top: 150px;
+  margin-top: 75px;
   &:hover {
     background-color: white;
     color: black;
