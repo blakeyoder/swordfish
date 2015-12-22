@@ -29,7 +29,7 @@
         </div>
         <div class="col-sm-4">
           <div class="thumbnail">
-            <%= image_tag("glass-resized.png", :class => "img-responsive glass-image") %>
+            <%= image_tag("stirrer-resized.png", :class => "img-responsive stirrer-image") %>
           </div>
           <div class="caption">
             <p>Once we know what you're going for, we research and develop recipes and compile them into a drink list. After we cut out anything that doesn't shine, we have a complete cocktail menu. We will send you a detailed shopping list of exactly what bottles to buy and where you can get them. The mixers, the ice, the glassware, and the bar -- we've got that covered. All you provide is the alcohol.</p>
@@ -37,7 +37,7 @@
         </div>
         <div class="col-sm-4">
           <div class="thumbnail">
-            <%= image_tag("stirrer-resized.png", :class => "img-responsive stirrer-image") %>
+            <%= image_tag("glass-resized.png", :class => "img-responsive glass-image") %>
           </div>
           <div class="caption">
             <p>The day of your gathering, we arrive early and setup the bar, pull out all the glassware, and start breaking down blocks of ice for the night. All you have to do now is show us where to be and where you stashed the liquor. When your guests arrive, just give us the go ahead and we'll start serving. After every last drink has been poured, we'll pack up and leave you to get some rest.</p>
@@ -76,6 +76,7 @@
         <div class="modal-content">
           <div class="modal-body form-edited">
             <section id="form">
+              <h3 id="close">X</h1>
               <h1>Swordfish Questionnaire</h1>
               <h2 id="form-info-text">Let us get a little information from you first</h2>
               <%= render partial: "partials/request_form", locals: {request: new_request_form}  %>

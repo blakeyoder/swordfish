@@ -124,7 +124,7 @@
 
 .glass-image {
   width: 145px;
-  margin-top: 112px;
+  margin-top: 118px;
   border: 0;
 }
 
@@ -332,6 +332,24 @@ center {
   margin: 0 auto;
 }
 
+#close {
+  display: block;
+  text-align: right;
+  padding-right: 30px;
+  margin-top: -28px;
+  font-size: 25px;
+  color: white;
+  opacity: .6;
+  &:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.modal-open {
+  overflow-y: auto;
+}
+
 #form{
   background-color: black;
   width: 100%;
@@ -421,7 +439,7 @@ center {
   background-color: transparent;
   font-family: $main-font;
   color: white;
-  width: 325px;
+  width: 322px;
   padding: 4%;
   font-size: 20px;
   text-align: center;
