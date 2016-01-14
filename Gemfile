@@ -5,7 +5,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
-gem 'pg'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'sass-rails', '~> 5.0'
@@ -27,9 +26,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'simple_form'
 
-gem 'rails_12factor'
 
 gem 'figaro'
+
+group :Development, :production do
+  gem 'rails_12factor'
+  gem 'pg'
+end
 
 
 # Use ActiveModel has_secure_password
