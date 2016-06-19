@@ -1,3 +1,7 @@
+body {
+  background-color: #D3D3D3;
+}
+
 //video-action
 #background {
     position: fixed;
@@ -11,10 +15,7 @@
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background-size: cover;
-    opacity: .4;
-}
-.container h1 {
-  color: white;
+    opacity: .2;
 }
 
 .container-full {
@@ -53,7 +54,8 @@
 }
 
 .margin-bottom {
-  margin-bottom: 200px;
+  margin-bottom: 150px;
+
 }
 
 .vertical-align {
