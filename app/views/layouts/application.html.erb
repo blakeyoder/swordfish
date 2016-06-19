@@ -7,12 +7,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.13.4/jquery.mask.min.js"></script>  <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
 
-
-<% flash.each do |key, value| %>
-  <div class="alert alert-<%= key %> alert-style"><%= value %></div>
-<% end %>
+  <video autoplay loop muted poster="cocktail-1.jpg" id="background">
+    <source src="https://www.dropbox.com/s/6zrfhv3ccouhnk5/swrdfsh_15.mp4?raw=1" type="video/mp4">
+  </video>
 
 <%= yield %>
 

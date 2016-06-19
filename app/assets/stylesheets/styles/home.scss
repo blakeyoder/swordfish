@@ -1,301 +1,117 @@
-.container {
-  padding-top: 15px;
+//video-action
+#background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    opacity: .4;
 }
-
-.alert-style {
-  background-color: black;
+.container h1 {
   color: white;
-  font-family: $main-font;
-  font-size: 20px;
-  margin-bottom: 0px;
-  text-align: center;
 }
 
-.hero {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: image-url("cocktail-1.jpg") no-repeat center center fixed;
-  background-size: cover;
-  h1 {
-    margin-top: 15%;
-    text-align: center;
-    color: black;
-    font-family: $main-font;
-  }
-  p{
-    text-align: center;
-    color: black;
-    font-size: 16px;
-    font-family: $main-font;
-  }
-}
-.scroller {
-  position: relative;
-  margin-left: 50%;
-  top: 88%;
-  width: 15px;
-  bottom: 0;
-  -webkit-animation: bounce 1s infinite;
-}
-
-@-webkit-keyframes bounce {
-  0%       { top:85%; }
-  25%, 75% { top:86%; }
-  50%      { top:83%; }
-  100%     {top:85%;}
-}
-
-//overriding bootstrap styles. Might beed to change this
-.container-fluid {
-  position: absolute;
-  top: 100%;
+.container-full {
+  padding-left: 0px;
   padding-right: 0px;
-  padding-left: 0px
 }
-//temp fix so that the sides dont blow out
-#sketch-text-row {
+
+.margin-fix {
   margin-left: 0px;
   margin-right: 0px;
 }
-.row {
-  margin-right: 0px;
-  margin-left: 0px
-}
-.barsketch {
-  margin: 0 auto;
-  padding: 10% 5% 10% 5%
-}
-.intro-paragraph {
-  text-align: left;
-  padding: 20% 0% 2% 20%;
-  line-height: 30px;
-  font-size: 20px;
-  font-family: $main-font;
-  @include bp-large{
-    padding: 12%;
-  }
-}
-.callout {
-  display: table;
-  width: 100%;
-  height: 600px;
-  background: image-url("cocktail-1.jpg") no-repeat center center scroll;
-  background-size: cover;
-}
-.cocktail-top-text {
-  display: table-cell;
+
+#header-text {
+  padding-top: 150px;
+  line-height: 70px;
   text-align: center;
-  vertical-align: middle;
-  font-size: $large-font-size;
-  font-family: $main-font;
-  color: white;
-}
-
-.break-text{
-  font-size: 20px;
-  text-align:center;
-  line-height: 15px;
-}
-
-.separator {
-  display: block;
+  width: 300px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  font-family: 'Didot';
+  font-size: 48px;
+  color: #333743;
 }
 
-.col-md-4 {
-  p {
-    font-size: $main-font-size;
-    font-family: $main-font;
-    line-height: 25px;
-  }
-}
-
-.services-overview {
-  text-align: justified;
-  position: relative;
-  display: block;
-  padding: 0 0 40px 0;
-}
-
-.services-overview .row{
-  width: 98%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 35px;
-  margin-top: 30px;
-}
-
-.bottle-image {
-  width: 90px;
-  vertical-align: middle;
-  border: 0;
-}
-
-.glass-image {
-  width: 145px;
-  margin-top: 118px;
-  border: 0;
-}
-
-.stirrer-image {
-  width: 170px;
-  margin-top: 65px;
-  border: 0;
-}
-
-.thumbnail {
-  opacity: 0;
-  background-color: transparent;
-  border: none;
-  height: 350px;
-  padding-top: 50px;
-}
-
-.caption {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  font-size: $main-font-size;
-  font-family: $main-font;
-}
-
-
-.old-fashioned-image {
-  float: right;
-  padding-bottom: 15px;
-  @include bp-small {
-    padding-bottom: 0px;
-  }
-}
-
-.menu-image {
-  @media (max-width:1200px) and (min-width:725px) {
-    width: 60%;
-    height: 60%;
-  }
-  padding-bottom: 15px;
-  @include bp-small {
-    padding-bottom: 0px;
-  }
-}
-
-.blog-list-title {
-  font-size: $large-font-size;
-  font-family: $main-font;
+#video-action {
   text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  font-family: 'AvenirNextCondensed-Regular';
+  font-size: 30px;
+  color: #000000;
+  margin-bottom: 190px;
 }
 
-.blog-list-desc {
+.old-fashioned {
+  box-shadow: 0px 4px 17px 0px rgba(0,0,0,0.50);
+}
+
+.margin-bottom {
+  margin-bottom: 200px;
+}
+
+.vertical-align {
+  padding-top: 75px;
+}
+
+.content-text {
+  font-family: 'AvenirNextCondensed-Regular';
   font-size: 18px;
-  font-family: $main-font;
-  text-align: center;
-  margin: 30px;
+  color: #333743;
+  p {
+    margin-bottom: 45px;
+  }
 }
 
-.no-padding-image{
-  padding: 0;
-}
-
-.no-padding {
-  padding-right: 15px;
-  margin-bottom: -15px;
-}
-
-.menu-image{
-  float: left;
-}
-
-.strainer-image {
-  margin-top: 75px;
-  display: table;
-  width: 100%;
+.couch-bg {
+  margin-top: 125px;
   height: 600px;
-  background: image-url("cocktail-3.jpg") no-repeat center center scroll;
+  background: url('couch.jpg') no-repeat center center;
   background-size: cover;
 }
 
-.form-call-out-text{
-  display: table-cell;
-  vertical-align: middle;
+.event-text {
+  margin-top: 60px;
   text-align: center;
+  font-family: 'AvenirNextCondensed-Regular';
+  font-size: 30px;
+  color: #FFFFFF;
 }
 
-#booking-text {
+.button-text {
   text-align: center;
-  vertical-align: middle;
-  font-size: $large-font-size;
-  font-family: $main-font;
-  color: white;
-}
-
-.bco {
-  position: relative;
-  min-height: 420px;
-  overflow: hidden;
-}
-
-.bg-image {
-  background-image: image-url("cocktail-2.jpg");
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: block;
-}
-
-.blog-list-item .col {
-  overflow: hidden;
-}
-
-.blog-list-item .no-margin {
-  margin: -1px 0;
-}
-
-.bg-image-right {
-  background-image: image-url("sample-menu.jpg");
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: block;
-}
-
-.form-button {
-  display: block;
-  margin: 0 auto;
-  height: 10%;
-  width: 250px;
-  border: 1px solid white;
-  border-radius: 1px;
-  background-color: transparent;
-  color: white;
-  font-family: $main-font;
-  font-size: 25px;
-  padding-top: 4px;
-  transition: .5s;
-  outline: none;
+  font-family: 'AvenirNextCondensed-Regular';
+  font-size: 30px;
+  color: #FFFFFF;
+  transition: 0.5s;
   &:hover {
-    background-color: white;
     color: black;
-    transition: .5s;
-  }
-  @include bp-small {
-    font-size: 20px;
-    width: 200px;
+    transition: 0.5s;
+    cursor: pointer;
   }
 }
 
-.modal-content {
-  -webkit-overflow-scrolling: auto;
-}
-
-#myModal {
-  overflow: scroll;
+#event-button {
+  margin: 0 auto;
+  margin-top: 45px;
+  height: 50px;
+  width: 200px;
+  border: 3px solid #FFFFFF;
+  &:hover {
+    background: white;
+    transition: 0.5s;
+  }
 }
 
 //all footer text sections
 .footer {
-  height: 450px;
+  height: 400px;
   width: 100%;
   background-color: #191919;
   .event-text {
@@ -337,220 +153,4 @@
       transition: .5s;
     }
   }
-}
-
-//form stylings
-center {
-  margin: 0 auto;
-}
-
-#close {
-  display: block;
-  text-align: right;
-  padding-right: 30px;
-  margin-top: -28px;
-  font-size: 25px;
-  color: white;
-  opacity: .6;
-  &:hover{
-    opacity: 1;
-    cursor: pointer;
-  }
-}
-
-
-#form{
-  background-color: black;
-  width: 100%;
-  height: 1825px;
-  @include bp-medium {
-    height: 1350px;
-  }
-  padding-top: 50px;
-  h1 {
-    text-align: center;
-    font-family: $main-font;
-    font-size: $large-font-size;
-    color: white;
-    font-style: italic;
-  }
-  h2 {
-    text-align: center;
-    font-family: $main-font;
-    font-size: 20px;
-    color: white;
-    font-style: bold;
-  }
-}
-
-.form-edited {
-  padding: 5px;
-}
-
-.form-width {
-  width: 95%;
-}
-
-#request_name {
-  border-radius: 0px;
-  border-color: white;
-  background-color: transparent;
-  font-family: $main-font;
-  color: white;
-  height: 60px;
-  font-size: 20px;
-}
-
-#request_email {
-  border-radius: 0px;
-  border-color: white;
-  background-color: transparent;
-  font-family: $main-font;
-  color: white;
-  height: 60px;
-  font-size: 20px;
-}
-
-#request_phone_number {
-  border-radius: 0px;
-  border-color: white;
-  background-color: transparent;
-  font-family: $main-font;
-  color: white;
-  height: 60px;
-  font-size: 20px;
-}
-
-#request_city_state {
-  border-radius: 0px;
-  border-color: white;
-  background-color: transparent;
-  font-family: $main-font;
-  color: white;
-  height: 60px;
-  font-size: 20px;
-}
-
-#request_event_date {
-  border-radius: 0px;
-  border-color: white;
-  background-color: transparent;
-  font-family: $main-font;
-  color: white;
-  height: 60px;
-  font-size: 20px;
-}
-
-.collection_radio_buttons {
-  display: block;
-  border-radius: 0px;
-  border: 1px solid white;
-  background-color: transparent;
-  font-family: $main-font;
-  color: white;
-  width: 322px;
-  padding: 4%;
-  font-size: 20px;
-  text-align: center;
-  transition: 0.5s;
-  &:hover {
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    transition: 0.5s;
-  }
-}
-
-.input-center {
-  display: table;
-  margin: 0 auto;
-}
-
-input[type="radio"]{
-  display: none;
-}
-
-#request_over_21 {
-  display:inline-block;
-  height: 15px;
-  width: 85%;
-  border-radius: 0px;
-  border-color: white;
-  margin: 0 auto;
-  &:after {
-    content: 'I acknowledge that I am at least 21 years of age';
-    width: 250px;
-    position: absolute;
-    padding-right: 5%;
-    left: 30px;
-    color: white;
-    font-family: $main-font;
-    font-size: 16px;
-  }
-}
-
-
-// #request_terms_and_agreement {
-//   margin-top: 30px;
-//   height: 15px;
-//   width: 85%;
-//   border-radius: 0px;
-//   border-color: white;
-//   &:after {
-//     content: 'Swordfish Cocktails has no control over, and assumes no responsibility for t.';
-//     width: 300px;
-//     position: absolute;
-//     left: 30px;
-//     padding-right: 5%;
-//     color: white;
-//     font-family: $main-font;
-//     font-size: 16px;
-//   }
-// }
-
-hr {
-  width: 60%;
-}
-
-#form-info-text {
-  padding: 5px;
-}
-
-.form-padding {
-  padding: 0% 7% 0% 7%;
-}
-
-.checkbox {
-  float: left;
-  margin: 0 auto;
-}
-
-
-.form-submit{
-  border-radius: 0px;
-  border-color: white;
-  background-color: transparent;
-  font-family: $main-font;
-  color: white;
-  height: 60px;
-  font-size: 20px;
-  text-align: center;
-  transition: .5s;
-  width: 300px;
-  margin: 0 auto;
-  display: block;
-  margin-top: 75px;
-  &:hover {
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    transition: .5s;
-  }
-}
-
-//clicked class
-.clicked {
-    background-color: white;
-    color: black;
-    z-index: 3;
 }

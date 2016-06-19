@@ -1,7 +1,85 @@
-<div class="hero">
-  <!-- <%= image_tag("scroller.svg", :class => "scroller") %> -->
-  <h1>Swordfish Cocktail Club</h1>
-  <p>
-    A private cocktail club opening 2016 in Greenville, SC
-  </p>
+<div class="container-fluid container-full">
+  <!-- Header Section -->
+  <h1 id="header-text">Swordfish Cocktails</h1>
+  <h2 id="video-action">See the Video</h2>
+  <!-- End Header Section -->
+
+  <!-- Content Sections -->
+  <div class="row margin-fix margin-bottom">
+    <div class="col-sm-5 col-sm-offset-1">
+      <%= image_tag('old-fashioned', :class => 'img-responsive old-fashioned') %>
+    </div>
+    <div class="col-md-5 content-text">
+      <p>
+        <span id="paragraph-section">
+          Swordfish Cocktail Club is a private bar that harkens back to the social club of a bygone era with the refined elegance that is modern craft cocktails.
+        </span>
+      </p>
+      <p>
+        <span id="paragraph-section">
+          Combining over 30 years of service experience, we have dedicated our lives to hospitality and the pursuit of excellence in the craft and service of drinks.
+        </span>
+      </p>
+      <p>
+        <span id="paragraph-section">
+          Drawing from the wisdom of those intrepid Barmen before us, as well as those still holding the fort, we seek to satisfy the tastes and curiosities of the lover of the cocktail.
+        </span>
+      </p>
+    </div>
+  </div>
+
+  <div class="row margin-fix">
+    <div class="col-sm-5 col-sm-push-5 col-sm-offset-1">
+      <%= image_tag('wood-glass', :class => 'img-responsive old-fashioned') %>
+    </div>
+    <div class="col-md-5 col-sm-pull-5 content-text">
+      <p>
+        <span id="paragraph-section">
+          Swordfish Cocktail Club is a private bar that harkens back to the social club of a bygone era with the refined elegance that is modern craft cocktails.
+        </span>
+      </p>
+      <p>
+        <span id="paragraph-section">
+          Combining over 30 years of service experience, we have dedicated our lives to hospitality and the pursuit of excellence in the craft and service of drinks.
+        </span>
+      </p>
+    </div>
+  </div>
+
+  <div class="couch-bg">
+    <div class="vertical-align">
+      <div class="row margin-fix">
+        <div class="col-md-8 col-md-offset-2 event-text">
+          <p>
+            We will be selling memberships and accepting donations in anticipation of the launch for Swordfish, coming fall of 2016.
+          </p>
+        </div>
+      </div>
+      <div class="row margin-fix">
+        <div class="col-md-8 col-md-offset-2 event-text">
+          <p>
+            Any further details in regard to the Gala or reservations can be found here.  or (will be disclosed at a later time.)
+          </p>
+        </div>
+      </div>
+      <div class="row margin-fix">
+        <div id="event-button">
+          <p class="button-text">
+            Event Details
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End content sections -->
+
+  <!-- Footer -->
+  <section class="footer">
+    <h2 class="company-text">SWORDFISH COCKTAILS</h2>
+    <p class="event-text">EVENTS</br>PRIVATE PARTIES</p>
+    <a href="http://www.instagram.com/swordfishcocktailclub"><%= image_tag("fa-instagram.png", :class => "instagram") %></a>
+    <p class="email">info@swordfishcocktailclub.com</p>
+  </section>
+  <!-- End Footer -->
 </div>
