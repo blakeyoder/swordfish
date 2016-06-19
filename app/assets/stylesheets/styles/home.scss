@@ -54,8 +54,10 @@ body {
 }
 
 .margin-bottom {
-  margin-bottom: 150px;
-
+  margin-bottom: 20px;
+  @include bp-small {
+    margin-bottom: 200px;
+  }
 }
 
 .vertical-align {
@@ -66,8 +68,12 @@ body {
   font-family: 'AvenirNextCondensed-Regular';
   font-size: 18px;
   color: #333743;
+  margin-top: 20px;
   p {
     margin-bottom: 45px;
+  }
+  @include bp-small {
+    margin-top: 0px;
   }
 }
 
